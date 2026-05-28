@@ -12,3 +12,9 @@ A collection of beginner to intermediate React applications built to master hook
 | **React Counter** | Simple state (`useState`), increments/decrements | React, Tailwind CSS |
 | **Demo Shop App** | Component decomposition, form handling, props passing | React, CSS |
 | **UseEffects Demo** | React component lifecycle, APIs, side-effect cleanup | React, CSS |
+
+## 📬 Contact Me
+
+Feel free to reach out or check out my work:
+- **GitHub**: [moosarehan](https://github.com/moosarehan)
+- **Email**: [moosarehan4@gmail.com](mailto:moosarehan4@gmail.com)
