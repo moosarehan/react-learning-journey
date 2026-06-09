@@ -16,5 +16,4 @@ A collection of beginner to intermediate React applications built to master hook
 ## 📬 Contact Me
 
 Feel free to reach out or check out my work:
-- **GitHub**: [moosarehan](https://github.com/moosarehan)
 - **Email**: [moosarehan4@gmail.com](mailto:moosarehan4@gmail.com)
