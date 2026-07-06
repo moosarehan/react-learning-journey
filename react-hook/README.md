@@ -1,153 +1,105 @@
-# React Hooks Tutorial Repository
+# ⚛️ React Hooks — Complete Reference
 
-Welcome to the **React Hooks Tutorial Repository**! This repository provides a comprehensive, step-by-step guide to mastering all React hooks, complete with real-world examples and best practices. Use this README as your reference to navigate through the tutorials for each hook.
-
-## Table of Contents
-
-1. [useState Hook Tutorial](#useState-hook-tutorial)
-2. [useEffect Hook Tutorial](#useEffect-hook-tutorial)
-3. [useContext Hook Tutorial](#useContext-hook-tutorial)
-4. [useReducer Hook Tutorial](#useReducer-hook-tutorial)
-5. [useRef Hook Tutorial](#useRef-hook-tutorial)
-6. [useImperativeHandle Hook Tutorial](#useImperativeHandle-hook-tutorial)
-7. [useLayoutEffect Hook Tutorial](#useLayoutEffect-hook-tutorial)
-8. [useInsertionEffect Hook Tutorial](#useInsertionEffect-hook-tutorial)
-9. [useId Hook Tutorial](#useId-hook-tutorial)
-10. [useTransition Hook Tutorial](#useTransition-hook-tutorial)
-11. [useDeferredValue Hook Tutorial](#useDeferredValue-hook-tutorial)
-12. [useSyncExternalStore Hook Tutorial](#useSyncExternalStore-hook-tutorial)
+> A hands-on guide to mastering every React hook with practical, real-world examples and best practices.
 
 ---
 
-## 03:00 - useState Hook Tutorial
+## 📖 About This Project
 
-Learn the basics of managing state in React using the `useState` hook.
+This project is a structured, code-first exploration of **all React hooks** available in React 18+. Each hook lives in its own folder inside `src/hooks/`, making it easy to navigate, study, and experiment with individually.
 
-- Create a simple counter application.
-- Understand how to update and manage state immutably.
-- Explore how React re-renders components when state changes.
+Whether you're a beginner getting started with `useState` or diving deep into `useSyncExternalStore`, this repo has you covered.
 
 ---
 
-## 10:22 - useEffect Hook Tutorial
+## 🪝 Hooks Covered
 
-Understand the `useEffect` hook for managing side effects.
-
-- Build a data-fetching example.
-- Learn about the dependency array to control when effects run.
-- Handle cleanup logic for effects, such as removing event listeners.
-
----
-
-## 21:32 - useContext Hook Tutorial
-
-Solve prop-drilling issues with the `useContext` hook.
-
-- Set up a global context for shared state.
-- Use the `Provider` and `Consumer` components for state sharing.
-- Implement a real-world example of a theme toggler.
-
----
-
-## 29:48 - useReducer Hook Tutorial
-
-Manage complex state transitions using the `useReducer` hook.
-
-- Create a counter application with actions like increment, decrement, and reset.
-- Understand the reducer function and its parameters.
-- Compare `useReducer` to `useState` for managing more complex state.
+| Hook | Purpose | Source |
+| :--- | :--- | :---: |
+| `useState` | Manage local component state and trigger re-renders on updates. | [View Code](./src/hooks/use-state/index.jsx) |
+| `useEffect` | Run side effects like data fetching, subscriptions, and DOM updates. | [View Code](./src/hooks/use-effect/index.jsx) |
+| `useContext` | Consume shared global state without prop drilling. | [View Code](./src/hooks/use-context/index.jsx) |
+| `useReducer` | Handle complex state logic using a reducer function and dispatch pattern. | [View Code](./src/hooks/use-reducer/index.jsx) |
+| `useRef` | Access DOM elements directly or persist mutable values across renders. | [View Code](./src/hooks/use-ref/index.jsx) |
+| `useImperativeHandle` | Expose custom methods from a child component to its parent via `forwardRef`. | [View Code](./src/hooks/use-imperative-handle/index.jsx) |
+| `useLayoutEffect` | Run synchronously after DOM mutations, before the browser paints. | [View Code](./src/hooks/use-layout-effect/index.jsx) |
+| `useInsertionEffect` | Inject dynamic styles before layout effects fire — ideal for CSS-in-JS. | [View Code](./src/hooks/use-insertion-effect/index.jsx) |
+| `useId` | Generate unique, stable IDs for accessibility and server-side rendering. | [View Code](./src/hooks/use-id/index.jsx) |
+| `useTransition` | Keep the UI responsive by marking heavy state updates as non-urgent. | [View Code](./src/hooks/use-transition/index.jsx) |
+| `useDeferredValue` | Defer re-rendering a non-critical value to improve perceived performance. | [View Code](./src/hooks/use-deferred-value/index.jsx) |
+| `useSyncExternalStore` | Safely subscribe to and read from external data stores. | [View Code](./src/hooks/use-sync-external-store/index.jsx) |
 
 ---
 
-## 38:05 - useRef Hook Tutorial
+## 🗂️ Project Structure
 
-Persist mutable values and access DOM elements using `useRef`.
-
-- Track the previous state of a component.
-- Build an input focus example.
-- Understand the difference between mutable refs and state.
-
----
-
-## 48:26 - useImperativeHandle Hook Tutorial
-
-Control child component refs from a parent component with `useImperativeHandle`.
-
-- Create a custom component exposing specific methods to its parent.
-- Use `forwardRef` with `useImperativeHandle` for advanced use cases.
-
----
-
-## 53:28 - useLayoutEffect Hook Tutorial
-
-Synchronize DOM mutations with the `useLayoutEffect` hook.
-
-- Compare `useLayoutEffect` with `useEffect`.
-- Implement a component measuring its DOM size before rendering updates.
-
----
-
-## 58:32 - useInsertionEffect Hook Tutorial
-
-Inject critical styles during rendering with `useInsertionEffect`.
-
-- Learn how to use this hook with CSS-in-JS libraries.
-- Understand its niche use cases for styling.
+```
+react-hook/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx               # Root component and navigation
+│   ├── App.css               # App-level styles
+│   ├── main.jsx              # Application entry point
+│   ├── index.css             # Global base styles
+│   └── hooks/
+│       ├── use-state/
+│       ├── use-effect/
+│       ├── use-context/
+│       ├── use-reducer/
+│       ├── use-ref/
+│       ├── use-imperative-handle/
+│       ├── use-layout-effect/
+│       ├── use-insertion-effect/
+│       ├── use-id/
+│       ├── use-transition/
+│       ├── use-deferred-value/
+│       └── use-sync-external-store/
+├── index.html
+├── package.json
+└── vite.config.js
+```
 
 ---
 
-## 01:02:33 - useId Hook Tutorial
+## 🚀 Getting Started
 
-Generate unique IDs for accessibility and server-side rendering with `useId`.
+### Prerequisites
 
-- Create dynamic form inputs with linked labels.
-- Understand the importance of consistent IDs across renders.
+- [Node.js](https://nodejs.org/) v18 or higher
+- npm v9 or higher
 
----
+### Installation & Running Locally
 
-## 01:06:52 - useTransition Hook Tutorial
+```bash
+# 1. Navigate to the project folder
+cd react-hook
 
-Handle non-urgent state updates for better user experience using `useTransition`.
+# 2. Install dependencies
+npm install
 
-- Filter a large list with a loading spinner for feedback.
-- Learn when and how to prioritize updates.
+# 3. Start the development server
+npm run dev
+```
 
----
-
-## 01:12:45 - useDeferredValue Hook Tutorial
-
-Optimize performance by deferring value updates with `useDeferredValue`.
-
-- Compare `useDeferredValue` with `useTransition`.
-- Implement debounced input updates in a search filter.
+Then open [http://localhost:5173](http://localhost:5173) in your browser. 🎉
 
 ---
 
-## 01:18:03 - useSyncExternalStore Hook Tutorial
+## 🛠️ Tech Stack
 
-Work with external stores seamlessly using `useSyncExternalStore`.
-
-- Sync component state with external stores like Redux or custom stores.
-- Ensure proper updates for both server-rendered and client-rendered applications.
-
----
-
-## How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/react-hooks-tutorial.git
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm start
-   ```
-4. Follow the tutorials in the README to explore each hook in depth.
+| Tool | Purpose |
+| :--- | :--- |
+| [React 18](https://react.dev/) | UI library and hooks runtime |
+| [Vite](https://vitejs.dev/) | Fast development server and bundler |
+| [ESLint](https://eslint.org/) | Code quality and react-hooks rule enforcement |
 
 ---
 
-Happy learning! 🚀
+## 🤝 Contributing
+
+Found a bug or want to improve an example? Pull requests are welcome!
+
+---
+
+> Happy learning! Keep building, keep growing. 🌱
